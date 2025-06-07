@@ -1,0 +1,29 @@
+<div class="card text-center   dark" style="width: 500px; height: 400px">
+   
+  <div class="card-header "> 
+     <span class="" style="">{% if todo.is_completed %}
+      <i ><img src="/static/check-mark.png" alt="" style="width:25px; height:25px;"></i>
+        {% else %}
+        <i ><img src="/static/cross.png" alt="" style="width:25px; height:25px;"></i>
+      {% endif %}</span>
+      {{todo.category}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title task-title">{{todo.title}}</h5>
+      <br>
+      
+      
+        
+      <div class="d-flex flex-column  mb-3">
+        <p class="card-text text-left">{{todo.description }}...</p>
+       <p class="text-left" style=" font-weight:bold;"> deadline: <span class="deadline-green">{{todo.deadline}}</span> </p>
+       <p class="text-left">Priority Level: {{todo.priority_level}}</p>
+       
+      </div>
+      {% include 'account/button.html' %}
+    </div>
+    <div class="card-footer text-muted">
+      {{todo.created_at}}
+    </div>
+    </div>
+    

@@ -1,0 +1,15 @@
+<ul class="list-inline m-0">
+    <li class="list-inline-item">
+        <button class="btn btn-success btn-md px-4 rounded-sm" type="button" data-toggle="tooltip" data-placement="top" title="Edit">
+            <a href="{% url 'edit' todo.uid %}"  style="text-decoration: none; color: inherit;">Edit</a>
+        </button>
+    </li>
+    <li class="list-inline-item">
+        <button type="button" class="btn btn-danger btn-md rounded-sm uid" data-bs-toggle="modal" data-bs-target="#deleteModal" data-toggle="tooltip" data-placement="top" title="Delete" data-uid="{{ todo.uid }}">
+            Delete
+        </button>
+    </li>
+</ul>
+
+<!-- Modal for Confirmation -->
+

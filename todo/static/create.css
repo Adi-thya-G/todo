@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Horizontally center the content */
+    justify-content: center;  /* Vertically center the content */
+    height: 100vh;  /* Ensure the body takes up the full viewport height */
+    margin: 0;  /* Remove default margin */
+}
+.form-main{
+    width: 700px;
+    height:800px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-items: center;
+    padding: 20px; /* Light border around the entire form */
+    border-radius: 8px; /* Optional: adds rounded corners to the form *//* Adjust form width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);   /* Circular shape */
+
+}
+.heading-main {
+    color: #007BFF;
+
+
+    
+   
+    
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-family: 'Merriweather', serif;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 10px;
+}
+textarea{
+    width: 70%;
+    height: 70px;
+
+}
+label{
+    font-size: 16px;
+    padding-right: 20px;
+}
+input{
+    width: 70%;
+    height: 35px;
+}
+select{
+    width: 35%;
+    height: 40px;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: lightslategray;
+
+}
+select:hover{
+    border-color: #009BFF;
+}
+#id_is_completed
+{
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    
+}
+.div-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-main{
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border-width: 3px;
+    border-radius:5px ;
+
+}
+ul.errorlist {
+    color: red;           /* Set text color to red */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;           /* Remove any default padding */
+    margin: 0;            /* Remove any default margin */
+}
+
+ul.errorlist li {
+    font-size: 14px;      /* Optional: adjust font size */
+    margin-top: 5px;      /* Optional: space between error messages */
+}

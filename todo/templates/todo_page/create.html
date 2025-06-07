@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %}
+{% block title %}
+create
+{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="/static/create.css">
+{% endblock %}
+
+{% block container %}
+<div class="form-main">
+    <div class="heading-main">
+        <h2 class="heading">Create Todo</h2>
+    </div>
+    <form method="POST"  class="form" >
+        {% include 'base/alert.html' %}
+        {% csrf_token %}
+        {{form.as_p}}
+        
+        <div class="div-main">
+            <input class="button-main" type="submit">
+            
+        </div>
+     </form>
+     
+</div>   
+    
+{% endblock %}
